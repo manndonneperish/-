@@ -1,0 +1,41 @@
+%-*- coding=utf-8 -*-
+\documentclass[UTF8,openany]{ctexbook} % openany参数去掉偶数空白页，若不使用，则会强制将奇数页后补上空白页结束分页
+\CTEXsetup[format={\Large\bfseries}]{section} % 使section标题左对齐
+
+%% 设置页面总体格式
+\usepackage{geometry}
+\geometry{a4paper,left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\pagestyle{plain}
+
+\usepackage{multirow} % 保证表格格式正确
+\usepackage{amsmath} % 用以显示数学符号
+\usepackage{booktabs} % 制作三线表需要使用
+\usepackage{lmodern} % 消除可能的Font shape警告
+
+%% 引用参考文献
+% \usepackage{ctex}
+% \usepackage{gbt7714} % 常用的中文参考文献格式，压缩序号，根据引用顺序排序
+% \usepackage[numbers,square,super,sort&compress]{natbib} % 压缩引用编号，根据引用顺序排序，自动上标方括号数字引用，主要在非gbt7714格式中使用
+% \newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}} % 自定义命令实现上标引用，针对于原本非上标引用的格式
+% \newcommand{\mycite}[1]{\scalebox{1.3}[1.3]{\raisebox{-0.65ex}{\cite{#1}}}} % 自定义命令实现非上标引用，针对于原本上标引用的格式
+
+\usepackage{authblk} % 设置机构信息需要的宏包，务必加载到ctex宏包之后
+
+%% 图片包
+% \usepackage{subfigure}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{float} 
+\usepackage{subcaption} % 不能和subfigure包一同使用
+\usepackage{setspace}
+
+%% 添加目录书签并去除红框
+\usepackage{hyperref} % 导入参考文献和目录书签均需使用
+\hypersetup{hidelinks,
+	colorlinks=true,
+	allcolors=black,
+	pdfstartview=Fit,
+	breaklinks=true
+}
+
+\date{}
