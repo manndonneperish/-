@@ -1,5 +1,7 @@
 import cv2
 import os
+import webcolors
+from scipy.spatial import KDTree
 
 os.chdir('颜色识别/') # 设置当前工作区，根据自己的实际情况更改
 
@@ -31,9 +33,6 @@ def select_region(event, x, y, flags, param):
             # 获取选中区域的平均rgb值
             cropped_image = image[min(y1, y2):max(y1, y2), min(x1, x2):max(x1, x2)]
             average_rgb = calculate_average_rgb(cropped_image)
-            
-            # 将rgb平均值转换为整数
-            average_rgb = (int(average_rgb[0]), int(average_rgb[1]), int(average_rgb[2]))
 
             # 绘制显示平均rgb值的文本
             text = f"Average RGB: {average_rgb}"
@@ -50,6 +49,15 @@ def reset_image():
     regions = []
     image = cv2.imread(image_path)
     cv2.imshow('Image', image)
+
+# 获取rgb值最接近的颜色名称
+def get_closest_color(rgb):
+    colors = list(webcolors.CSS3_NAMES_TO_HEX.keys())
+    rgb_values = [webcolors.hex_to_rgb(hex_val) for hex_val in webcolors.CSS3_NAMES_TO_HEX.values()]
+    kdtree = KDTree(rgb_values)
+    _, index = kdtree.query(rgb)
+    closest_color = colors[index]
+    return closest_color
 
 # 计算区域的平均rgb值
 def calculate_average_rgb(image):
