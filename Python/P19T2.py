@@ -1,0 +1,12 @@
+s = "www.moe.gov.cn"
+print("第一个字符：", s[0])
+print("前三个字符：", s[:3])
+print("后三个字符：", s[-3:])
+print("字符串总长度：", len(s))
+print("'o'在字符串中的第一个索引值：", s.find("o"))
+print("'o'出现的次数：", s.count("o"))
+print(s.replace(".", "-"))
+print(s.upper())
+i = s.replace(".", "")
+print(i)
+print(s.split('.'))
