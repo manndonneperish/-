@@ -1,1 +1,356 @@
+%-*- coding=utf-8 -*-
+\documentclass[UTF8]{ctexart}
+\usepackage{geometry}
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\usepackage{graphicx}
+\usepackage{float}
+\pagestyle{plain}
+% 保证表格格式正确
+\usepackage{multirow}	
+% \usepackage{booktabs}
+\usepackage{subfigure}
+\usepackage{setspace}
+\usepackage{ctex}
+% 添加目录书签并去除红框
+\usepackage{hyperref}
+\hypersetup{hidelinks,
+	colorlinks=true,
+	allcolors=black,
+	pdfstartview=Fit,
+	breaklinks=true
+}
 
+\date{}
+\begin{document}
+	\begin{figure}[t]
+	\centering{\includegraphics[height=1.69cm,width=7.23cm]{logo.png}}
+	\end{figure}
+	\vskip 0.31746cm
+
+	\begin{center}
+		\quad \\
+		\quad \\
+		\heiti \fontsize{48}{48}
+		课程实习报告
+	\end{center}
+	\vskip 1.7944cm
+	
+	\begin{quotation}
+		\songti \fontsize{15}{15}
+		\doublespacing \songti
+		\par\setlength \zihao{3} \centering
+		\quad 
+		
+		\textbf{实习名称：}\underline{\hspace{2.6cm} 工程地质测量 \hspace{2.6cm}}
+		
+		\textbf{班 \hspace{0.75cm} 级：}\underline{\hspace{3.15cm} 地质2002 \hspace{3.15cm}}
+		
+		\textbf{组 \hspace{0.75cm} 别：}\underline{\hspace{3.78cm} 4组 \hspace{3.78cm}}
+		
+		\textbf{小组成员：}\underline{吴秋沁（杨熙涵、罗懿鑫、凌晨程）}
+		
+		\textbf{指导老师：}\underline{\hspace{3.4cm} 李吉生 \hspace{3.4cm}}
+		
+		\textbf{实习时间：}\underline{\hspace{1.4cm} 2021.12.20.—2021.12.26. \hspace{1.4cm}}
+		
+		
+		\vskip 5cm
+		\centering
+		\heiti 
+		2021年12月25日
+	\end{quotation}
+
+
+\tableofcontents
+\newpage
+
+% 添加目录
+\pagenumbering{arabic}
+
+\section{前言}
+	测量学是一门很需要实践经验的课，在平时上理论课的时候，我们缺乏足够的对实际仪器的操作。
+	
+	本次测量实习，主要任务是对规定区域进行相关的测量。通过实习，巩固和加深测量基本知识，基本理论和基本方法的理解和运用。熟练掌握各种测量仪器的使用。培养学生能综合运用所学的测量知识去解决资源调查和矿业资源工程测量问题的能力，为今后从事相关专业工作奠定基础。
+	\subsection{实习的时间及地点}
+	根据本学期课程安排，我于2021-2022 学年上学期进行了为期一周的测量学实习。
+	
+	本次工程地质测量实习的地点在南京工业大学校区内，时间从2021.12.20.—2021.12.26.共一周。
+	\subsection{实习的目的及要求}
+	本次实习的目的主要有以下几点：
+	
+	1. 巩固和加深测量学的基本知识，能够理解和运用基本的测量方法。
+	
+	2. 熟练掌握各类测量仪器的基本使用方法。
+	
+	实习的基本要求：
+	
+	1. 水准仪和经纬仪的使用
+	
+	（1）水准仪的使用：安置仪器（确定安置点，支好脚架，平稳将水准仪放置于三脚架头上，拧紧螺丝）、粗略整平（调节三个脚螺旋使水准器的气泡居中）、瞄准水准尺、精确整平（读数前将符合水准气泡进行严密吻合）、记读数据。
+	
+	（2）经纬仪的使用：粗对中（移动三脚架使对中标志对准测站中心，踩稳仪器）、精对中（旋转三个脚螺旋使对中器中心对准地面标志中心）、粗平（升降脚架，使圆水准气泡居中）、精平（使长气泡居中）、检查对中情况（检查仪器在任意方向的对中情况）、再次精对中、再次精平。
+	
+	2. 经纬仪、水准仪、钢尺读数要求
+	
+	（1）经纬仪读数精确到秒
+	
+	（2）水准仪读数精确到毫米
+	
+	（3）钢尺读数精确到毫米
+	
+	3. 数据记录类型
+	
+	（1）水准路线数据包括水准路线总长、水准尺读数（共六组，一组内包括红面和黑面读数）
+	
+	（2）闭合导线数据包括闭合导线总长，七组水平度盘读数。
+	
+	（3）标准点位的高程和坐标值
+	
+	4. 数据处理
+	
+	根据测量数据和过程确定了以下几个数据处理要求：
+	
+	（1）闭合导线的各个内角大小
+	
+	（2）闭合水准路线高差
+	
+	（3）测量数据的误差分析和改正
+	
+	（4）各测站的位置和测点位置
+	\subsection{实习的任务及内容}
+	本实习的主要任务有：学会熟练使用经纬仪、水准仪和钢尺进行测量，对所测得结果进行处理并完成一份实习报告。
+	
+	本次实习的工作内容：
+	
+	1. 在水塔附近布设闭合导线（总长约250m）并进行相应控制测量，并用经纬仪和钢尺精确测量，得出布设点位的坐标。
+	
+	2. 在水塔附近布设水准网（总长约114.8m），并测量几个点位之间的高差并对该系列数据进行处理。
+	\subsection{实习的具体过程}
+	概况：2021年12月20日到21日，小组成员到水塔进行了选址、定点、勘察，并随后开始了测量。
+	
+	1. 20日上午，小组成员吴秋沁、杨熙涵在仁智楼、水塔附近进行了路线规划，找到了一条切实可行的路线。
+	
+	2. 20日下午，小组成员凌晨程、罗懿鑫、吴秋沁、杨熙涵进行了闭合导线的测量。由于一些实际因素的制约，我们对测量路线进行了重新规划，并再次测量，得到了闭合导线的内角数据。每一个内角都由每个小组成员进行了测量，故得到了四组数据。
+	
+	3. 21日上午，小组成员凌晨程，罗懿鑫，吴秋沁，杨熙涵进行了闭合水准路线的测量，并获得了一系列水准尺读数。此过程中杨熙涵负责记录数据，吴秋沁负责操作水准仪并读数，罗懿鑫和凌晨程负责举水准尺。
+	
+	4. 21日下午小组成员对闭合导线的测点水平距离进行了测量，杨熙涵负责进行直线定线，罗懿鑫、吴秋沁负责拉钢尺，凌晨程负责读数。
+	
+	测量工作至此已基本完成，在此期间还与其他小组进行了讨论，借用了兰金球等小组的钢尺，以及受到了李吉生老师的现场指导让我们迅速完成此项工作。再此对帮助过我们小组的所有人表示感谢。
+
+\newpage
+
+\section{闭合导线测量}
+	\subsection{导线点设置}
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=5.4cm,height=5.4cm]{闭合导线点位.png}
+		\caption{闭合导线点位}
+		\end{figure}
+	点位说明：除控制点以外的点位由粉笔画于固定点处，点位编号2-4-1表示2班4组1号点，以此类推共6个点位；控制点为永久性不锈钢，共两个。每个点位都由四名同学分别测量，记录手簿中为本人测量值，坐标计算表中数据为四名同学的平均值。
+	\subsection{测量过程}
+	第一次测量
+	
+	测站位置为点位2-4-1，测得20号控制点与2-4-2点之间角度值为$ 113^{\circ}00^{'}56^{''} $。
+	
+	第二次测量
+	
+	测站位置为点位2-4-2，测得2-4-1与2-4-3点位之间角度为$ 149^{\circ}02^{'}00^{''} $。
+	
+	第三次测量
+	
+	测站位置为点位2-4-3，测得2-4-2与2-4-4点位之间角度为$ 119^{\circ}09^{'}00^{''} $。
+	
+	第四次测量
+	
+	测站位置为点位2-4-4，测得2-4-3与2-4-5点位之间角度为$ 84^{\circ}21^{'}00^{''} $。
+	
+	第五次测量
+	
+	测站位置为点位2-4-5，测得2-4-4与2-4-6点位之间角度为$ 150^{\circ}00^{'}45^{''} $。
+	
+	第六次测量
+	
+	测站点位为点位2-4-6，测得2-4-5与20号控制点位之间角度为$ 166^{\circ}09^{'}52^{''} $。
+	
+	第七次测量
+	
+	测站点位为控制点位20，测得2-4-1与2-4-6号点位之间的角度为$ 123^{\circ}15^{'}18^{''} $。
+	
+	第八次测量
+	
+	钢尺测出各个点位之间的距离，测得20号点位与2-4-1之间距离为7.445m，2-4-1与2-4-2 之间距离为$ 32.970m $，2-4-2与2-4-3之间距离为$ 30.720m $，2-4-3与2-4-4之间距离为$ 28.845m $，2-4-4与2-4-5 之间距离为$ 34.120m $，2-4-5 与2-4-6 之间距离为$ 18.325m $，2-4-6与20 号控制点之间距离为$ 21.584m $。
+	\newpage
+	\subsection{经纬仪的使用测量记录手簿}
+	\leftline{时间:\underline{2021.12.20.} \ 地点:\underline{南京工业大学天宝阁} \ 天气:\underline{晴} \ 班级:\underline{地质200} \ 小组:\underline{4} \ 仪器型号:\underline{$ \textbf{DJ}_6 $型光学经纬仪}}
+	% Please add the following required packages to your document preamble:
+	% \usepackage{multirow}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multirow{2}{*}{测站}     & \multirow{2}{*}{目标}     & \multirow{2}{*}{盘位} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}水平度盘读数\\ （° \ ' \ ''）\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}半测回角值\\ （° \ ' \ ''）\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}一测回角值\\ （° \ ' \ ''）\end{tabular}} \\
+			&                         &                     &                                                                                                          &                                                                                                         &                                                                                                         \\ \hline
+			\multirow{4}{*}{20号控制点} & \multirow{2}{*}{21号控制点} & 左                   & 90 00 00                                                                                                 & \multirow{2}{*}{124 34 00}                                                                              & \multirow{4}{*}{124 31 29}                                                                              \\ \cline{3-4}
+			&                         & 右                   & 270 07 02                                                                                                &                                                                                                         &                                                                                                         \\ \cline{2-5}
+			& \multirow{2}{*}{2-4-1}  & 左                   & 214 34 00                                                                                                & \multirow{2}{*}{124 28 58}                                                                              &                                                                                                         \\ \cline{3-4}
+			&                         & 右                   & 34 36 00                                                                                                 &                                                                                                         &                                                                                                         \\ \hline
+			\multirow{4}{*}{2-4-1}  & \multirow{2}{*}{20号控制点} & 左                   & 90 00 00                                                                                                 & \multirow{2}{*}{265 10 05}                                                                              & \multirow{4}{*}{265 13 11}                                                                              \\ \cline{3-4}
+			&                         & 右                   & 269 59 00                                                                                                &                                                                                                         &                                                                                                         \\ \cline{2-5}
+			& \multirow{2}{*}{2-4-2}  & 左                   & 355 10 05                                                                                                & \multirow{2}{*}{265 15 58}                                                                              &                                                                                                         \\ \cline{3-4}
+			&                         & 右                   & 175 14 58                                                                                                &                                                                                                         &                                                                                                         \\ \hline
+			\multirow{4}{*}{2-4-2}  & \multirow{2}{*}{2-4-1}  & 左                   & 90 00 00                                                                                                 & \multirow{2}{*}{207 26 00}                                                                              & \multirow{4}{*}{207 26 15}                                                                              \\ \cline{3-4}
+			&                         & 右                   & 269 49 00                                                                                                &                                                                                                         &                                                                                                         \\ \cline{2-5}
+			& \multirow{2}{*}{2-4-3}  & 左                   & 297 26 00                                                                                                & \multirow{2}{*}{207 26 30}                                                                              &                                                                                                         \\ \cline{3-4}
+			&                         & 右                   & 117 15 30                                                                                                &                                                                                                         &                                                                                                         \\ \hline
+			\multirow{4}{*}{2-4-3}  & \multirow{2}{*}{2-4-2}  & 左                   & 135 00 00                                                                                                & \multirow{2}{*}{261 31 40}                                                                              & \multirow{4}{*}{261 28 40}                                                                              \\ \cline{3-4}
+			&                         & 右                   & 315 03 20                                                                                                &                                                                                                         &                                                                                                         \\ \cline{2-5}
+			& \multirow{2}{*}{2-4-4}  & 左                   & 36 31 40                                                                                                 & \multirow{2}{*}{261 27 40}                                                                              &                                                                                                         \\ \cline{3-4}
+			&                         & 右                   & 216 31 00                                                                                                &                                                                                                         &                                                                                                         \\ \hline
+			\multirow{4}{*}{2-4-4}  & \multirow{2}{*}{2-4-3}  & 左                   & 90 00 00                                                                                                 & \multirow{2}{*}{270 11 00}                                                                              & \multirow{4}{*}{270 11 00}                                                                              \\ \cline{3-4}
+			&                         & 右                   & 270 01 30                                                                                                &                                                                                                         &                                                                                                         \\ \cline{2-5}
+			& \multirow{2}{*}{2-4-5}  & 左                   & 00 11 00                                                                                                 & \multirow{2}{*}{270 11 00}                                                                              &                                                                                                         \\ \cline{3-4}
+			&                         & 右                   & 180 12 00                                                                                                &                                                                                                         &                                                                                                         \\ \hline
+			\multirow{4}{*}{2-4-5}  & \multirow{2}{*}{2-4-4}  & 左                   & 90 00 00                                                                                                 & \multirow{2}{*}{204 08 30}                                                                              & \multirow{4}{*}{204 08 10}                                                                              \\ \cline{3-4}
+			&                         & 右                   & 270 00 50                                                                                                &                                                                                                         &                                                                                                         \\ \cline{2-5}
+			& \multirow{2}{*}{2-4-6}  & 左                   & 294 08 30                                                                                                & \multirow{2}{*}{204 07 50}                                                                              &                                                                                                         \\ \cline{3-4}
+			&                         & 右                   & 114 08 40                                                                                                &                                                                                                         &                                                                                                         \\ \hline
+			\multirow{4}{*}{2-4-6}  & \multirow{2}{*}{2-4-5}  & 左                   & 90 00 00                                                                                                 & \multirow{2}{*}{189 50 08}                                                                              & \multirow{4}{*}{189 59 00}                                                                              \\ \cline{3-4}
+			&                         & 右                   & 269 45 15                                                                                                &                                                                                                         &                                                                                                         \\ \cline{2-5}
+			& \multirow{2}{*}{20号控制点} & 左                   & 279 50 08                                                                                                & \multirow{2}{*}{190 07 53}                                                                              &                                                                                                         \\ \cline{3-4}
+			&                         & 右                   & 99 53 08                                                                                                 &                                                                                                         &                                                                                                         \\ \hline
+		\end{tabular}
+	\end{table}
+	\newpage
+	\subsection{闭合导线坐标计算表}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+	\begin{table}[h]
+		\addtolength{\leftskip} {-2.6cm} 
+		\begin{tabular}{|ccccccccccc|}
+		\hline
+		\multicolumn{1}{|c|}{\multirow{2}{*}{点号}}                                                & \multicolumn{1}{c|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}角度观测值\\ (° \ ' \ '')\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}改正后角度\\ (° \ ' \ '')\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}坐标方位角\\ (° \ ' \ '')\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}水平距离\\ （m）\end{tabular}}} & \multicolumn{2}{c|}{坐标增量}                                                                   & \multicolumn{2}{c|}{改正后坐标增量}                                                                & \multicolumn{2}{c|}{坐标}                                                       \\ \cline{6-11} 
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{∆x/m}                    & \multicolumn{1}{c|}{∆y/m}                    & \multicolumn{1}{c|}{∆x/m}                    & \multicolumn{1}{c|}{∆y/m}                    & \multicolumn{1}{c|}{X/m}                        & Y/m                         \\ \hline
+		\multicolumn{1}{|c|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}20号\\ 控制点\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{}}                                                      & \multicolumn{1}{c|}{\multirow{2}{*}{（右角）}}                                                  & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{\multirow{2}{*}{151785.44}} & \multirow{2}{*}{115794.92}  \\ \cline{4-9}
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{43 08 14}}                                              & \multicolumn{1}{c|}{\multirow{2}{*}{7.445}}                                              & \multicolumn{1}{c|}{\multirow{2}{*}{+5.43}}  & \multicolumn{1}{c|}{\multirow{2}{*}{+5.09}}  & \multicolumn{1}{c|}{\multirow{2}{*}{+5.42}}  & \multicolumn{1}{c|}{\multirow{2}{*}{+5.08}}  & \multicolumn{1}{c|}{}                           &                             \\ \cline{1-3} \cline{10-11} 
+		\multicolumn{1}{|c|}{\multirow{2}{*}{2-4-1}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{113 00 56}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{113 01 06}}                                             & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{\multirow{2}{*}{151790.86}} & \multirow{2}{*}{115800.00}  \\ \cline{4-9}
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{110 07 08}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{32.970}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{-11.34}} & \multicolumn{1}{c|}{\multirow{2}{*}{+30.96}} & \multicolumn{1}{c|}{\multirow{2}{*}{-11.35}} & \multicolumn{1}{c|}{\multirow{2}{*}{+30.96}} & \multicolumn{1}{c|}{}                           &                             \\ \cline{1-3} \cline{10-11} 
+		\multicolumn{1}{|c|}{\multirow{2}{*}{2-4-2}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{149 02 00}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{149 02 10}}                                             & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{\multirow{2}{*}{151779.51}} & \multirow{2}{*}{115830.96}  \\ \cline{4-9}
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{141 04 58}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{30.720}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{-23.90}} & \multicolumn{1}{c|}{\multirow{2}{*}{+19.30}} & \multicolumn{1}{c|}{\multirow{2}{*}{-23.91}} & \multicolumn{1}{c|}{\multirow{2}{*}{+19.30}} & \multicolumn{1}{c|}{}                           &                             \\ \cline{1-3} \cline{10-11} 
+		\multicolumn{1}{|c|}{\multirow{2}{*}{2-4-3}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{114 09 00}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{114 09 10}}                                             & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{\multirow{2}{*}{151755.60}} & \multirow{2}{*}{115850.26}  \\ \cline{4-9}
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{206 55 48}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{28.845}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{-25.72}} & \multicolumn{1}{c|}{\multirow{2}{*}{-13.06}} & \multicolumn{1}{c|}{\multirow{2}{*}{-25.73}} & \multicolumn{1}{c|}{\multirow{2}{*}{-13.06}} & \multicolumn{1}{c|}{}                           &                             \\ \cline{1-3} \cline{10-11} 
+		\multicolumn{1}{|c|}{\multirow{2}{*}{2-4-4}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{84 21 00}}                                              & \multicolumn{1}{c|}{\multirow{2}{*}{84 21 09}}                                              & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{\multirow{2}{*}{151729.87}} & \multirow{2}{*}{1158837.20} \\ \cline{4-9}
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{302 34 39}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{34.120}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{+18.37}} & \multicolumn{1}{c|}{\multirow{2}{*}{-28.75}} & \multicolumn{1}{c|}{\multirow{2}{*}{+18.38}} & \multicolumn{1}{c|}{\multirow{2}{*}{-28.75}} & \multicolumn{1}{c|}{}                           &                             \\ \cline{1-3} \cline{10-11} 
+		\multicolumn{1}{|c|}{\multirow{2}{*}{2-4-5}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{150 00 45}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{150 00 55}}                                             & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{\multirow{2}{*}{151748.25}} & \multirow{2}{*}{115808.45}  \\ \cline{4-9}
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{332 33 44}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{18.325}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{+16.26}} & \multicolumn{1}{c|}{\multirow{2}{*}{-8.44}}  & \multicolumn{1}{c|}{\multirow{2}{*}{+16.25}} & \multicolumn{1}{c|}{\multirow{2}{*}{-8.44}}  & \multicolumn{1}{c|}{}                           &                             \\ \cline{1-3} \cline{10-11} 
+		\multicolumn{1}{|c|}{\multirow{2}{*}{2-4-6}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{166 09 52}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{166 10 02}}                                             & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{\multirow{2}{*}{151764.50}} & \multirow{2}{*}{115800.01}  \\ \cline{4-9}
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{346 23 42}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{21.584}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{+20.98}} & \multicolumn{1}{c|}{\multirow{2}{*}{-5.08}}  & \multicolumn{1}{c|}{\multirow{2}{*}{+20.96}} & \multicolumn{1}{c|}{\multirow{2}{*}{-5.09}}  & \multicolumn{1}{c|}{}                           &                             \\ \cline{1-3} \cline{10-11} 
+		\multicolumn{1}{|c|}{\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}20号\\ 控制点\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{}}                                                      & \multicolumn{1}{c|}{\multirow{2}{*}{}}                                                      & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{\multirow{2}{*}{151785.46}} & \multirow{2}{*}{115794.92}  \\ \cline{4-9}
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{43 08 14}}                                              & \multicolumn{1}{c|}{\multirow{2}{*}{}}                                                   & \multicolumn{1}{c|}{\multirow{2}{*}{}}       & \multicolumn{1}{c|}{\multirow{2}{*}{}}       & \multicolumn{1}{c|}{\multirow{2}{*}{}}       & \multicolumn{1}{c|}{\multirow{2}{*}{}}       & \multicolumn{1}{c|}{}                           &                             \\ \cline{1-3} \cline{10-11} 
+		\multicolumn{1}{|c|}{\multirow{2}{*}{2-4-1}}                                             & \multicolumn{1}{c|}{\multirow{2}{*}{}}                                                      & \multicolumn{1}{c|}{\multirow{2}{*}{}}                                                      & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{\multirow{2}{*}{}}          & \multirow{2}{*}{}           \\ \cline{4-9}
+		\multicolumn{1}{|c|}{}                                                                   & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{}                                                                    & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                        & \multicolumn{1}{c|}{}                           &                             \\ \hline
+		\multicolumn{1}{|c|}{Σ}                                                                  & \multicolumn{1}{c|}{889 58 51}                                                              & \multicolumn{1}{c|}{900 00 00}                                                              & \multicolumn{1}{c|}{}                                                                       & \multicolumn{1}{c|}{174,01}                                                              & \multicolumn{1}{c|}{+0.08}                   & \multicolumn{1}{c|}{+0.02}                   & \multicolumn{1}{c|}{0.00}                    & \multicolumn{1}{c|}{0.00}                    & \multicolumn{1}{c|}{}                           &                             \\ \hline
+		\multicolumn{11}{|l|}{\begin{tabular}[c]{@{}l@{}}$ F_\beta = \sum \beta - (n-2)×180^°= -69^{''} $ \qquad $ f_x = \sum \Delta x = +0.08 $ \qquad $ f_y = \sum \Delta y = +0.02 $  \\    \\ $ f_{\beta 容} = \pm 40^{''} \sqrt{n} = \pm 105.8 $ \qquad $ f_D = 0.082 $\\    \\ $ f_\beta \le f_{β容} $ (合格) \qquad $K = \frac{f_D}{\sum D} = \frac{1}{2122} < \frac{1}{2000}$（符合精度要求）\end{tabular}}               \\ \hline
+		\end{tabular}
+	\end{table}
+\newpage
+\section{钢尺测量}
+	\subsection{边号及方向设定}
+		\begin{figure}[H]
+		\centering{\includegraphics[width=3.4cm,height=5.4cm]{钢尺测量边号.png}}
+		\caption{钢尺测量边号}
+		\end{figure}
+	相关说明：边号D1表示闭合导线的第一条边，其他以此类推。D1的默认方向为从20号控制点指向2-4-1号点，D2则为2-4-1号点指向2-4-2号点，以此类推。
+	\subsection{钢尺丈量手簿}
+	\leftline{钢尺号:\underline{20} \qquad 日期:\underline{2021.12.21.} \qquad 尺长方程:\underline{$ l_t = 30m + 0.006m + 0.000012 \times 30m \times (t - 20 ℃) $}}
+	\begin{table}[h]
+		\addtolength{\leftskip} {-1cm}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			边号 & 点号     & 测向           & \begin{tabular}[c]{@{}c@{}}整尺\\ 段数\end{tabular} & \begin{tabular}[c]{@{}c@{}}零尺段读数\\ （m）\end{tabular} & \begin{tabular}[c]{@{}c@{}}边长丈量值\\ （m）\end{tabular} & \begin{tabular}[c]{@{}c@{}}温度\\ （℃）\end{tabular} & $ \Delta l $/m  & $ \Delta t $/℃ & $ \Delta D $/m    \\ \hline
+			D1 & 20号控制点 & 20号控制点到2-4-1 & 0                                               & 7.445                                               & 7.445                                               & 10                                               & 0.006 & -20  & 7.4438  \\ \hline
+			D2 & 2-4-1  & 2-4-1到2-4-2  & 1                                               & 14.970                                              & 44.970                                              & 10                                               & 0.006 & -20  & 44.9688 \\ \hline
+			D3 & 2-4-2  & 2-4-2到2-4-3  & 1                                               & 6.120                                               & 36.120                                              & 10                                               & 0.006 & -20  & 36.1188 \\ \hline
+			D4 & 2-4-3  & 2-4-3到2-4-4  & 1                                               & 6.530                                               & 36.530                                              & 10                                               & 0.006 & -20  & 36.5288 \\ \hline
+			D5 & 2-4-4  & 2-4-4到2-4-5  & 1                                               & 12.720                                              & 42.720                                              & 10                                               & 0.006 & -20  & 42.7188 \\ \hline
+			D6 & 2-4-5  & 2-4-5到2-4-6  & 0                                               & 18.325                                              & 18.325                                              & 10                                               & 0.006 & -20  & 18.3238 \\ \hline
+			D7 & 2-4-6  & 2-4-6到20号控制点 & 0                                               & 21.184                                              & 21.184                                              & 10                                               & 0.006 & -20  & 21.1828 \\ \hline
+		\end{tabular}
+	\end{table}
+\section{闭合水准路线测量}
+	\subsection{水准点设置}
+		\begin{figure}[H]
+		\centering{\includegraphics[width=3.4cm,height=5.4cm]{闭合水准路线点位.png}}
+		\caption{闭合水准路线点位}
+		\end{figure}
+	点位说明：点位命名规则及标识方法与闭合导线点位相同；实际测量时，从测站1开始，与2-4-1号点连线，则20号标准点读数为后尺读数，2-4-1号点读数为前尺读数；后面以此类推。
+	
+	水准闭合线路总长约为114.8米，共设置了5个点位（点2-4-1，点2-4-2，点2-4-3，点2-4-4，点2-4-5），由20号控制点开始，水准仪架设点为两个点位中点，每两个点进行一次测回，并用钢尺测出了一系列点位之间的距离，获得了一系列数据。每一次测回由不同的同学分别测量。
+	\subsection{测量过程}
+	第一次测量测站位置：控制点20号点位与点位2-4-1连线（长度$ 33.52m $）中点。
+	
+	测量得数据：前测黑尺读数为$ 1329mm $，前测红尺读数为$ 6115mm $，后测黑尺读数为$ 1275mm $，后测红尺读数为$ 5965mm $，计算得高差大小为$ -0.052m $。
+	
+	第二次测量：测站位置：点位2-4-1与点位2-4-2连线（长度$ 10.23m $）中点。
+	
+	测量得数据：前测黑尺读数为$ 0523mm $，前测红尺读书为$ 5318mm $，后侧黑尺读数为$ 1430mm $，后侧红尺读数为$ 6125mm $，计算得高差为$ +0.907m $。
+	
+	第三次测量：测站位置：点位2-4-2与点位2-4-3连线（长度$ 10.85m $）中点。
+	
+	测量得数据：前测黑尺读数为$ 0500mm $，前测红尺读数为$ 5288mm $，后侧黑尺读数为$ 1935mm $，后测红尺读数为$ 6625mm $，计算得高差为$ +1.336m $。
+	
+	第四次测量：测站位置：点位2-4-3与点位2-4-4连线（长度$ 31.62m $）中点。
+	
+	测量得数据：前测黑尺读数为$ 1298mm $，前测红尺读数为$ 6085mm $，后测黑尺读书为$ 1425mm $，后测红尺读数为$ 6113mm $，计算得高差为$ +0.1275m $。
+	
+	第五次测量：测站位置：点位2-4-4与点位2-4-5连线（长度$ 12.86m $）中点。
+	
+	测量得数据：前测黑尺读数为$ 1732mm $，前测红尺读数为$ 6517mm $，后测黑尺读数为$ 0503mm $，后侧红尺读数为$ 5189mm $，计算得高差为$ -1.2285m $。
+	
+	第六次测量：测站位置：点位2-4-5与控制点20连线（长度$ 15.72m $）中点。
+	
+	测量得数据：前测黑尺读数为$ 1278mm $，前测红尺读数为$ 6605mm $，后测黑尺读数为$ 0195mm $，后测红尺读数为$ 4879mm $，计算得高差为$ -1.0845m $。
+	\subsection{水准仪的使用测量记录手簿}
+	\leftline{时间:\underline{2021.12.20.} \ 地点:\underline{南京工业大学天宝阁} \ 天气:\underline{晴} \ 班级:\underline{地质200} \ 小组:\underline{4} \ 仪器型号:\underline{$ \textbf{S}_3 $型水准仪}}
+	% Please add the following required packages to your document preamble:
+	% \usepackage{multirow}
+	\begin{table}[h]
+		\begin{tabular}{|c|ccccccc|}
+			\hline
+			\multirow{2}{*}{测站} & \multicolumn{1}{c|}{\multirow{2}{*}{点号}} & \multicolumn{2}{c|}{水准尺读(mm)}                           & \multicolumn{1}{c|}{\multirow{2}{*}{高差(m)}}   & \multicolumn{1}{c|}{\multirow{2}{*}{改正后高差(m)}} & \multicolumn{1}{c|}{\multirow{2}{*}{高程(m)}}   & \multirow{2}{*}{备注} \\ \cline{3-4}
+			& \multicolumn{1}{c|}{}                    & \multicolumn{1}{c|}{黑尺/mm} & \multicolumn{1}{c|}{红尺/mm} & \multicolumn{1}{c|}{}                         & \multicolumn{1}{c|}{}                          & \multicolumn{1}{c|}{}                         &                     \\ \hline
+			\multirow{2}{*}{1}  & \multicolumn{1}{c|}{20号控制点}              & \multicolumn{1}{c|}{1329}  & \multicolumn{1}{c|}{6115}  & \multicolumn{1}{c|}{\multirow{2}{*}{-0.052}}  & \multicolumn{1}{c|}{\multirow{2}{*}{-0.0536}}  & \multicolumn{1}{c|}{55.2763}                  & 已知点                 \\ \cline{2-4} \cline{7-8} 
+			& \multicolumn{1}{c|}{2-4-1}               & \multicolumn{1}{c|}{1275}  & \multicolumn{1}{c|}{5965}  & \multicolumn{1}{c|}{}                         & \multicolumn{1}{c|}{}                          & \multicolumn{1}{c|}{\multirow{2}{*}{55.2277}} & \multirow{10}{*}{}  \\ \cline{1-6}
+			\multirow{2}{*}{2}  & \multicolumn{1}{c|}{2-4-1}               & \multicolumn{1}{c|}{0523}  & \multicolumn{1}{c|}{5318}  & \multicolumn{1}{c|}{\multirow{2}{*}{+0.907}}  & \multicolumn{1}{c|}{\multirow{2}{*}{+0.9065}}  & \multicolumn{1}{c|}{}                         &                     \\ \cline{2-4} \cline{7-7}
+			& \multicolumn{1}{c|}{2-4-2}               & \multicolumn{1}{c|}{1430}  & \multicolumn{1}{c|}{6125}  & \multicolumn{1}{c|}{}                         & \multicolumn{1}{c|}{}                          & \multicolumn{1}{c|}{\multirow{2}{*}{56.1292}} &                     \\ \cline{1-6}
+			\multirow{2}{*}{3}  & \multicolumn{1}{c|}{2-4-2}               & \multicolumn{1}{c|}{0500}  & \multicolumn{1}{c|}{5288}  & \multicolumn{1}{c|}{\multirow{2}{*}{+1.336}}  & \multicolumn{1}{c|}{\multirow{2}{*}{+1.3355}}  & \multicolumn{1}{c|}{}                         &                     \\ \cline{2-4} \cline{7-7}
+			& \multicolumn{1}{c|}{2-4-3}               & \multicolumn{1}{c|}{1935}  & \multicolumn{1}{c|}{6625}  & \multicolumn{1}{c|}{}                         & \multicolumn{1}{c|}{}                          & \multicolumn{1}{c|}{\multirow{2}{*}{57.4647}} &                     \\ \cline{1-6}
+			\multirow{2}{*}{4}  & \multicolumn{1}{c|}{2-4-3}               & \multicolumn{1}{c|}{1298}  & \multicolumn{1}{c|}{6085}  & \multicolumn{1}{c|}{\multirow{2}{*}{+0.1275}} & \multicolumn{1}{c|}{\multirow{2}{*}{+0.126}}   & \multicolumn{1}{c|}{}                         &                     \\ \cline{2-4} \cline{7-7}
+			& \multicolumn{1}{c|}{2-4-5}               & \multicolumn{1}{c|}{1425}  & \multicolumn{1}{c|}{6113}  & \multicolumn{1}{c|}{}                         & \multicolumn{1}{c|}{}                          & \multicolumn{1}{c|}{\multirow{2}{*}{57.5907}} &                     \\ \cline{1-6}
+			\multirow{2}{*}{5}  & \multicolumn{1}{c|}{2-4-5}               & \multicolumn{1}{c|}{1732}  & \multicolumn{1}{c|}{6517}  & \multicolumn{1}{c|}{\multirow{2}{*}{-1.2285}} & \multicolumn{1}{c|}{\multirow{2}{*}{-1.2291}}  & \multicolumn{1}{c|}{}                         &                     \\ \cline{2-4} \cline{7-7}
+			& \multicolumn{1}{c|}{2-4-6}               & \multicolumn{1}{c|}{0503}  & \multicolumn{1}{c|}{5189}  & \multicolumn{1}{c|}{}                         & \multicolumn{1}{c|}{}                          & \multicolumn{1}{c|}{\multirow{2}{*}{56.3616}} &                     \\ \cline{1-6}
+			\multirow{2}{*}{6}  & \multicolumn{1}{c|}{2-4-6}               & \multicolumn{1}{c|}{1278}  & \multicolumn{1}{c|}{6605}  & \multicolumn{1}{c|}{\multirow{2}{*}{-1.0845}} & \multicolumn{1}{c|}{\multirow{2}{*}{-1.0853}}  & \multicolumn{1}{c|}{}                         &                     \\ \cline{2-4} \cline{7-8} 
+			& \multicolumn{1}{c|}{20号控制点}              & \multicolumn{1}{c|}{0195}  & \multicolumn{1}{c|}{4879}  & \multicolumn{1}{c|}{}                         & \multicolumn{1}{c|}{}                          & \multicolumn{1}{c|}{55.2763}                  & 已知点                 \\ \hline
+			Σ/m                 & \multicolumn{1}{c|}{}                    & \multicolumn{1}{c|}{}      & \multicolumn{1}{c|}{}      & \multicolumn{1}{c|}{+0.0055}                  & \multicolumn{1}{c|}{0.0000}                          & \multicolumn{1}{c|}{}                         &                     \\ \hline
+			计算与校核               & \multicolumn{7}{l|}{\begin{tabular}[c]{@{}l@{}}$ f_h = \sum h = +5.5 $ \qquad $ \sum a - \sum b = +5.5 $\\ $ f_{h容} = \pm 40 \sqrt{L} (mm) = \pm 13.55 $ \qquad $ \sum L = 114.8 $ \qquad $ - \frac{f_h}{\sum L} = -0.04791 $\end{tabular}}            \\ \hline
+		\end{tabular}
+	\end{table}
+
+\newpage
+\section{个人感想}
+	为期一周的测量实习已经快要结束了，在这次实习过程中，我首先体会到的是，测量学是一项十分精确的工作，而精细意味着我们必须要保持平稳的心态来进行每一次的测量和数据矫正，绝不能操之过急。
+	
+	通过在学校期间在课堂上对测量学的学习，我有了一个基本的、理论的测量学轮廓，而实习的目的，就是要将这些理论与实际工程联系起来，这就是工科最大的特点。
+	
+	测量学是用来研究地球的形状和大小以及地面点位的科学，我认为，在本质上，测量学主要完成的任务就是确定地面点的位置以及随时间的变化。在此刻这个信息的社会里，测量学的作用日益重要，测量成果做为地球信息系统的基础，带给了最基本的空间位置信息。构建信息高速公路、基础地理信息系统及各种专题的和专业的地理信息系统，均迫切要求建立具有统一标准，可共享的测量数据库和测量成果信息系统。所以测量成为获取和更新基础地理信息最可靠，最准确的手段。
+	
+	通过这次实习，我学到最多的是小组之间的团结、默契，更锻炼了自我很多测绘的潜力。
+	
+	首先，我熟练了水准仪、经纬仪的各种使用方法，掌握了仪器的检验和校正方法。
+	
+	其次，在对数据的检查和矫正的过程中，明白了各种测量误差的来源，其主要有三个方面：仪器误差(仪器本身所决定，属客观误差来源)、观测误差(由于人员的技术水平而造成，属于主观误差来源)、外界影响误差(受到如温度、大气折射等外界因素的影响而这些因素又时时处于变动中而难以控制，属于可变动误差来源)。明白了如何避免测量的数据错误，限度的减少测量误差的方法，要作到：(1)要选取精度高的测量仪器。(2)提高自我的测量水平。(3)多次测量取平均值。
+	
+	在这次的实习中，我也了解到了要想很好地进行测量，首先务必要掌握过硬的基本理论知识，要有实干精神。同时，测量工作很大程度上必须考小组成员共同合作完成，每个组员都务必亲自实践，并且要分工明确。在实习测量的过程中，不可能完全的没有错误，我们应不气馁，继续一次又一次的重测，重计算，一次次地练习，一次次得提高测量水平，我们不断在经验中获得教训。在实习之初，我们也遇到了不少问题，在老师的详细指导下，我们才能克服许多问题。
+	
+	总而言之，我从这一次的实习当中学到了不少知识，也发现了自己过去对于许多知识点的理解不够透彻，相信在今后的学习生活中，我能够有更好的发挥。
+\end{document}
